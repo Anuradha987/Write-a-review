@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+
+	<style type="text/css">
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	margin: 0px;
+	background: #f5e8ce;
+	background-size:100% 100%;
+	 background-repeat: cover;
+	  background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.sidebar{	
+	
+	width: 200px;
+	height: 100%;
+	background: #00164E; 
+	border-top: 0;
+	border-style: inset;	
+	left: -250px;
+	line-height: 70px;
+	cursor: pointer;
+	user-select: none;
+	border-left: 0px;
+	position: fixed;
+	margin-top: 0px;
+	transition: all .5s ease;
+}
+@media only screen and (max-width: 900px)
+{	
+	.sidebar {
+		width: 150px;
+		height: 100%;
+		}
+}
+
+.side{
+	left:-250px;
+}
+.side .active{
+	left: 0px;
+
+} 
+#menu{
+	height: 70px;
+	width: 200px;
+	background-color:#00164E;
+	border-top: 0;	
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #00164E;
+	left: 150%;
+	font-family:Century Schoolbook,Cambria ;
+	font-size:20px;
+
+
+}
+@media only screen and (max-width: 900px)
+{	
+	#menu{
+		width: 150px;
+		font-size:17px;
+	}
+}
+
+.sidebar ul a{
+	display: block;
+height: 100%;
+width: 100%;
+line-height: 65px;
+color: white;
+font-size: 18px;
+box-sizing: border-box;
+margin-top: 0px;
+border-bottom: 1px solid black;
+padding-left: 40px;
+font-family:Microsoft Sans Serif ;
+ }
+
+ 
+@media only screen and (max-width: 900px)
+{	
+	
+	.sidebar ul a{
+
+		font-size: 15px;
+ }
+	
+}
+#check{
+	display:none;
+}
+
+label #btn, label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background:#402331;
+	border-radius: 3px;
+}
+label #btn{
+	left:40px;
+	top:25px;
+	padding:6px 12px;
+	font-size: 30px;
+	transition: all .5s;
+}
+
+#cancel{
+display: none;
+}
+label #cancel{
+	z-index:-1;
+	left: -195px;
+	top:0px;
+	font-size: 0px;
+	transition: all .5s ease;
+	border:none;
+	margin-top: 0px;
+	padding:0px 0px; 
+	margin-left: 3%;
+	overflow: hidden;
+	
+}
+#check:checked~ .sidebar{
+	left:0px;
+}
+#check:checked ~ label #btn{
+	left:250px;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel{
+	left:195px;
+	
+}
+#check:checked ~ section{
+	margin-left: 200px;
+	
+}
+
+@media only screen and (max-width: 900px)
+{	
+	#check:checked ~ section{
+	margin-left: 150px;
+	
+	}
+}
+
+section{
+	background-size:cover;
+	height: calc(100vh-80px);
+}
+
+
+.logo{
+	
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 300px;
+	height: 300px;	
+}
+.logoarea{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 50%; 
+	top: 0;
+	content: "";
+	margin-left: -150px;
+	margin-top: -80px;
+
+}
+.topic{
+	margin-top: 105px;
+	font-family: Candara,sans-serif ;
+	margin-bottom: 20px;
+	font-size:48px; 
+	text-align: center;
+	color: #a37500;
+	text-shadow: 2px 2px black;
+	
+}
+
+	</style> 
+</head>
+
+<body >
+
+ 
+	<input type="checkbox" id="check">
+	<label for="check" id="check1"><div id="menu" onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true"><i class="fa fa-bars"></i>&nbsp&nbsp MENU</div>
+		<input type="button" id="cancel"></label>
+<div class="sidebar">
+	
+<ul >
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			About Us</a></li>
+			
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			Rooms</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			Facilities</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			Reservations</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="Gallery.html">
+			Gallery</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			Registration</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="#">
+			Multiple Hotel</a></li>
+			<li><a onmouseover="this.style.backgroundColor='#132145'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true" href="Contact.html">
+			Contact Us</a></li>
+		</ul>
+	
+</div>	
+
+<div class="logoarea"><img src="logo1.png" alt="logo" class="logo"></div>
+	
+<section>	
+
+<div class="container">
+<h1 class="topic">Connect With Us</h1>
+<div class="contact-box">
+	
+	<div class="contact-left">
+		<h3>Write a review</h3>
+
+		<form name=form1 onsubmit=" return validate();">
+
+			<div class="input-row">
+				<div class="input-group">
+					<label class="label">Your Name</label> 
+					<input type="text" name="name" placeholder="Name" size=35 >
+				</div>
+				<div class="input-group">
+					<label>Phone No</label> 
+					<input type="text" name="phone" placeholder="Phone number" size=35 >
+				</div>
+			</div>
+
+
+			<div class="input-row">
+				<div class="input-group">
+					<label>Email Address</label> 
+					<input type="text" name="mail" placeholder="Email" size=35 >
+				</div>
+				<div class="input-group">
+					<label >Subject</label> 
+					<input type="text" name="subject" placeholder="Subject" size=35 >
+				</div>
+			</div>
+				<label class="Message"> Your Message</label>	
+				<textarea rows="5" placeholder="Write your message here..." id="textrelative" ></textarea>
+
+				<button type="submit"  onmouseover="this.style.backgroundColor='#1f3f8f'; return true" 
+				onmouseout="this.style.backgroundColor='#00164E'; return true">Send</button>
+		</form>
+	</div>	
+	
+
+</section>
+</body>
+</html>
